@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
 
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.polskakuchniatradycyjna_app."
+        android:label="Start" >
+        <action
+            android:id="@+id/action_startFragment_to_menuChoiceFragment"
+            app:destination="@id/menuChoiceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuChoiceFragment"
+        android:name="com.example.polskakuchniatradycyjna_app.MenuChoiceFragment"
+        android:label="Menu Choice" >
+        <action
+            android:id="@+id/action_menuChoiceFragment_to_readyMealFragment"
+            app:destination="@id/action_menuChoiceFragment_to_readyMealFragment" />
+        <action
+            android:id="@+id/action_menuChoiceFragment_to_customMealFragment"
+            app:destination="@id/action_menuChoiceFragment_to_customMealFragment" />
+    </fragment>
 </navigation>
