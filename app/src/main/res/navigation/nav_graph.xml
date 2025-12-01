@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.example.polskakuchniatradycyjna_app."
+        android:name="com.example.polskakuchniatradycyjna_app.SummaryFragment"
         android:label="Start" >
         <action
             android:id="@+id/action_startFragment_to_menuChoiceFragment"
