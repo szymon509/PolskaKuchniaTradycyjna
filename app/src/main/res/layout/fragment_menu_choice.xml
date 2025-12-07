@@ -4,32 +4,33 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp">
-
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <TextView
-        android:id="@+id/tv_menu_choice_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Wybierz tryb zamówienia"
-        android:textAlignment="center"
-        android:textSize="24sp" />
-
+        android:text="Co chcesz zamówić?"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="40dp"/>
 
     <Button
-        android:id="@+id/btn_ready_meal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
-        android:text="Gotowe dania" />
-
+        android:id="@+id/btnReady"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Gotowe Zestawy"
+        android:textSize="20sp"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="24dp"/>
 
     <Button
-        android:id="@+id/btn_custom_meal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Komponuj własne danie" />
+        android:id="@+id/btnCustom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Skomponuj Własne"
+        android:textSize="20sp"
+        android:backgroundTint="#2196F3" />
+
 </LinearLayout>

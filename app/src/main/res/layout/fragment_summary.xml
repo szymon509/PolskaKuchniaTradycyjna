@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SummaryFragment">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="PODSUMOWANIE"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:text="Do zapłaty: 0.0 zł"
+        android:textSize="28sp"
+        android:textColor="#2E7D32"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnNextPerson"
+        android:text="Zatwierdź i Kolejna Osoba"
+        android:backgroundTint="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:text="Wyczyść Wszystko (Nowy Rachunek)"
+        android:backgroundTint="#D32F2F"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</LinearLayout>

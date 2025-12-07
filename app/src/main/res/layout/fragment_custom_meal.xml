@@ -1,14 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CustomMealFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <TextView
+            android:text="Skomponuj Własne Danie"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/kompot"
+            android:scaleType="centerInside"
+            android:background="#EFEFEF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:text="1. Wybierz Bazę"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnBasePotatoes"
+            android:text="Ziemniaki (6 zł)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnBaseRice"
+            android:text="Ryż / Kasza (5 zł)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="2. Dodatek Główny"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnMeatCutlet"
+            android:text="Kotlet Schabowy (18 zł)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnMeatChicken"
+            android:text="Pierś z Kurczaka (16 zł)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="3. Surówki i Dodatki"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSalad"
+            android:text="Zestaw Surówek (7 zł)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSauce"
+            android:text="Sos Pieczeniowy (3 zł)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnGoSummaryFromCustom"
+            android:text="ZATWIERDŹ I IDŹ DO PODSUMOWANIA"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+</ScrollView>

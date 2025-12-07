@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PolskaKuchniaTradycyjna_app">
         <activity
-            android:name=".'StartFragment.kt'"
-            android:exported="true">
+            android:name="MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolskaKuchniaTradycyjna_app">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
