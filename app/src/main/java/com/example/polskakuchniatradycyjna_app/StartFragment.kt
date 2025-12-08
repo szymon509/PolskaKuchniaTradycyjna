@@ -12,7 +12,6 @@ class StartFragment : Fragment(R.layout.start_fragment) {
         super.onViewCreated(view, savedInstanceState)
         val binding = StartFragmentBinding.bind(view)
 
-
         binding.btnStart.setOnClickListener {
             findNavController().navigate(R.id.action_start_to_menu)
         }

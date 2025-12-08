@@ -2,7 +2,8 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,20 +12,24 @@
         android:padding="16dp">
 
         <TextView
-            android:text="Skomponuj Własne Danie"
-            android:textSize="24sp"
+            android:text="Skomponuj Własne Danie:"
+            android:textSize="29sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="15dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="casual"
+            />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
             android:src="@drawable/kompot"
             android:scaleType="centerInside"
-            android:background="#EFEFEF"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="15dp"
+            />
 
         <TextView
             android:text="1. Wybierz Bazę"
@@ -33,12 +38,12 @@
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btnBasePotatoes"
-            android:text="Ziemniaki (6 zł)"
+            android:text="Ziemniaki 6 zł"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btnBaseRice"
-            android:text="Ryż / Kasza (5 zł)"
+            android:text="Ryż / Kasza 5 zł"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -50,12 +55,12 @@
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btnMeatCutlet"
-            android:text="Kotlet Schabowy (18 zł)"
+            android:text="Kotlet Schabowy 20 zł"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btnMeatChicken"
-            android:text="Pierś z Kurczaka (16 zł)"
+            android:text="Pierś z Kurczaka 18 zł"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -67,12 +72,12 @@
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btnSalad"
-            android:text="Zestaw Surówek (7 zł)"
+            android:text="Zestaw Surówek 7 zł"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btnSauce"
-            android:text="Sos Pieczeniowy (3 zł)"
+            android:text="Sos Pieczeniowy 2 zł"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -83,7 +88,9 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="50dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"/>
+            android:layout_height="60dp"
+
+            />
 
     </LinearLayout>
 </ScrollView>
