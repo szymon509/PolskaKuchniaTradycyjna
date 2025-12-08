@@ -17,7 +17,6 @@ class OrderViewModel : ViewModel() {
     }
 
     fun setSoup(name: String, price: Double) {
-        // Uproszczona wersja: po prostu dodaje cenę
         addPrice(price)
     }
 
